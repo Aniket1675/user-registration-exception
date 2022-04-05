@@ -24,5 +24,10 @@ public class ExceptionUserRegistrationTest {
         String mobileNumber = "91 7020409312";
         Assert.assertTrue(exceptionUserRegistration.testMobileNumber(mobileNumber));
     }
+    @Test
+    public void password() throws InputInvalidException{
+        String password = "Aniket@123";
+        Assert.assertTrue(exceptionUserRegistration.testPassword(password));
+    }
 
 }
