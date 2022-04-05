@@ -14,5 +14,11 @@ public class ExceptionUserRegistrationTest {
         String lastName = "Kumbhar";
         Assert.assertTrue(exceptionUserRegistration.testLastName(lastName));
     }
+    @Test
+    public void emailId() throws InputInvalidException {
+        String emailId = "aniketkum007@gmail.com";
+        Assert.assertTrue(exceptionUserRegistration.testEmailId(emailId));
+    }
+
 
 }
