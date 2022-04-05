@@ -19,6 +19,10 @@ public class ExceptionUserRegistrationTest {
         String emailId = "aniketkum007@gmail.com";
         Assert.assertTrue(exceptionUserRegistration.testEmailId(emailId));
     }
-
+    @Test
+    public void mobileNumber() throws InputInvalidException {
+        String mobileNumber = "91 7020409312";
+        Assert.assertTrue(exceptionUserRegistration.testMobileNumber(mobileNumber));
+    }
 
 }
